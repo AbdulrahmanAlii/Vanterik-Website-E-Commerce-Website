@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet1.css">
+    <title>Lgoin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+  </head>
+  <body>
+
+    <section id="header">
+      <a href="#"><img src="./media/logo1.png" class="logo" height="180px" width="300px"></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Shop.html" >Shop</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li id="lg-bag"><a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li id="lg-bag"><a href="loginpage.html" class="active"><i class="fa-solid fa-user-plus"></i></a></li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section class="forms-section">
+  <h1 class="section-title"></h1>
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login" id="form_id">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login" onclick="op()">Login</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup" onsubmit="return validation()">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" type="email" required>
+            <span id="mail" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required>
+            <span id="pass" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+      <div class="col">
+        <img src="./media/logo1.png" class="logo" height="100px" width="100px">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>5110 Rue Buchan Montreal,QC Canada</p>
+        <p><strong>Phone: </strong>+1(438)778-2242/+1(438)778-5555</p>
+        <p><strong>Hours: </strong>09:00-18:00, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow US</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      
+              <div class="col">
+                <h4>About</h4>
+                <a href="#" onclick="window.location.href='About.html';">About us</a>
+                <a href="#" onclick="window.location.href='Contactus.html';">Contact us</a>
+                <a href="#">Privacy POlicy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+
+              <div class="col">
+                <h4 onclick="window.location.href='lginpage.html';">My Account</h4>
+                <a href="#" onclick="window.location.href='shoppingcart.html';">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Help</a>
+              </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="./media/app.jpg">
+          <img src="./media/play.jpg">
+        </div>
+        <p>Secured Payment Gateways</p>
+          <img src="./media/pay.png">
+      </div>
+
+      <div class="copyright">
+        <p>©2022, ITSOLUTIONS - E-Commerce Website</p>
+      </div>
+
+    </footer>
+
+<script src="./js/script.js"></script>
+  </body>
+</html>

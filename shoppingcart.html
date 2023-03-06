@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet1.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+
+  </head>
+  <body>
+
+    <section id="header">
+      <a href="#"><img src="./media/logo1.png" class="logo" height="180px" width="300px"></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li id="lg-bag"><a href="shoppingcart.html"  class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li id="lg-bag"><a href="loginpage.html"><i class="fa-solid fa-user-plus"></i></a></li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 70%!</p>
+
+     </section>
+
+     <section id="cart" class="section-p1">
+         <table width="100%" id="table1">
+             <thead>
+                 <tr>
+                     <td>Remove</td>
+                     <td>Image</td>
+                     <td>Product</td>
+                     <td>Price</td>
+                     <td>Quantity</td>
+                     <td>Subtotal</td>
+                 </tr>
+             </thead>
+
+             <tbody>
+               <div class="dd1">
+                 <tr class="cart-items">
+                     <td><button type="button" class="btn btn-danger"> <i class="far fa-times-circle"></i></button></td>
+                     <td><img src="./media/pro1.jpg" alt=""></td>
+                     <td>Himaliyan Salted Lamp</td>
+                     <td class="price">$29.99</td>
+                     <td><input type="number" value="1" name="" class="quanity"></td>
+                     <td>$29.99</td>
+                 </tr>
+                 </div>
+                 <div class="dd1">
+                 <tr class="cart-items">
+                     <td><button type="button" class="btn btn-danger"> <i class="far fa-times-circle"></i></button></td>
+                     <td><img src="./media/pro2.jpg"  alt=""></td>
+                     <td>Himaliyan Salted Lamp</td>
+                     <td class="price">$25.99</td>
+                     <td><input type="number" value="1" name="" class="quanity"></td>
+                     <td>$25.99</td>
+                 </tr>
+                 </div>
+                 <div class="dd1">
+                 <tr class="cart-items">
+                     <td><button type="button" class="btn btn-danger"> <i class="far fa-times-circle"></i></button></td>
+                     <td><img src="./media/pro3.jpg"  alt=""></td>
+                     <td>Himaliyan Salted Lamp</td>
+                     <td class="price">$118.19</td>
+                     <td><input type="number" value="1" name="" class="quanity"></td>
+                     <td>$118.19</td>
+                 </tr>
+                 </div>
+             </tbody>
+         </table>
+     </section>
+
+     <section id="product1">
+         <div class="pro-container">
+         <div class="pro" onclick="window.location.href='pro1.html';">
+            <img src="./media/pro1.jpg" class="orderpic">
+           <div class="desc">
+             <span>Vetrintak</span>
+              <h5>Himaliyan Salted Lamp</h5>
+             <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+             </div>
+             <h4>$49.99</h4>
+           </div>
+           <a href="#" class="shop-item-button"><i class="fa-solid fa-cart-shopping cart"></i> </a>
+         </div>
+
+         <div class="pro">
+           <img src="./media/pro2.jpg" class="orderpic">
+           <div class="desc">
+             <span>Vetrintak</span>
+             <h5>Himaliyan Salted Lamp</h5>
+             <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+             </div>
+             <h4>$29.99</h4>
+           </div>
+           <a href="#" class="shop-item-button"><i class="fa-solid fa-cart-shopping cart"></i> </a>
+         </div>
+
+
+         </section>
+
+     <section id="cart-add" class="section-p1">
+         <div id="cuopon">
+             <h3>Apply Coupon</h3>
+             <div>
+                 <input type="text" name="" id="" placeholder="Enter Your Coupon">
+                 <button class="normal">Apply</button>
+             </div>
+         </div>
+
+         <div id="subtotal">
+             <h3>Cart Totals</h3>
+             <table>
+                 <tr>
+                     <td>Cart Subtotal</td>
+                     <td class="dooha">$ 174.17</td>
+                 </tr>
+                 <tr>
+                     <td>Shipping</td>
+                     <td>Free</td>
+                 </tr>
+                 <tr>
+                     <td><strong>TVQ Tax</strong></td>
+                     <td><strong  class="dooha2">$ 17.42</strong></td>
+                 </tr>
+                 <tr>
+                     <td><strong> TPS Tax</strong></td>
+                     <td><strong  class="dooha3">$ 8.71</strong></td>
+                 </tr>
+                 <tr>
+                     <td><strong>Total Including 15% Tax</strong></td>
+                     <td><strong  class="dooha1">$ 200.30</strong></td>
+                 </tr>
+             </table>
+             <button class="normal" onclick="window.location.href='payment.html'; validation1()">Proceed to checkout</button>
+         </div>
+     </section>
+
+
+
+
+    <footer class="section-p1">
+      <div class="col">
+        <img src="./media/logo1.png" class="logo" height="100px" width="100px">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>5110 Rue Buchan Montreal,QC Canada</p>
+        <p><strong>Phone: </strong>+1(438)778-2242/+1(438)778-5555</p>
+        <p><strong>Hours: </strong>09:00-18:00, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow US</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+
+              <div class="col">
+                <h4>About</h4>
+                <a href="#" onclick="window.location.href='About.html';">About us</a>
+                <a href="#" onclick="window.location.href='Contactus.html';">Contact us</a>
+                <a href="#">Privacy POlicy</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+
+              <div class="col">
+                <h4 onclick="window.location.href='lginpage.html';">My Account</h4>
+                <a href="#" onclick="window.location.href='shoppingcart.html';">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Help</a>
+              </div>
+
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="./media/app.jpg">
+          <img src="./media/play.jpg">
+        </div>
+        <p>Secured Payment Gateways</p>
+          <img src="./media/pay.png">
+      </div>
+
+      <div class="copyright">
+        <p>©2022, ITSOLUTIONS - E-Commerce Website</p>
+      </div>
+
+    </footer>
+
+<script src="./js/script.js" async></script>
+  </body>
+</html>
